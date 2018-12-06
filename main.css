@@ -51,6 +51,11 @@ p {
   color: #646464;
 }
 
+.registered-symbol {
+  font-size: 17px;
+  margin: 0 3px 0 0;
+}
+
 .cat-select-check {
   width: 18px;
   height: 18px;
