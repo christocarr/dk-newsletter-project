@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Newsletter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+  <main class="main" id="main">
+    <h1 class="main-title">Book Recommendations Just for You</h1>
+    <p>Choose from the categories below and we will send you information about books you'll love</p>
+    <!--------categorie selection---------->
+    <div class="cat-select-container">
+      <!--childrens-->
+      <div class="cat-selection">
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Children's</label>
+        <img src="img/bitmap-copy-2.jpg"
+          srcset="img/bitmap-copy-2@2x.jpg 2x,
+             img/bitmap-copy-2@3x.jpg 3x"
+          class="Bitmap-Copy-2">
+      </div>
+      <!--crafts & hobbies-->
+      <div class="cat-selection">
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Crafts & Hobbies</label>
+        <img src="img/bitmap-copy-9.jpg"
+          srcset="img/bitmap-copy-9@2x.jpg 2x,
+             img/bitmap-copy-9@3x.jpg 3x"
+          class="Bitmap-Copy-9">
+      </div>
+      <!--education & teachers-->
+      <div class="cat-selection">
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Education & Teachers</label>
+        <img src="img/bitmap-copy-7.jpg"
+          srcset="img/bitmap-copy-7@2x.jpg 2x,
+             img/bitmap-copy-7@3x.jpg 3x"
+          class="Bitmap-Copy-7">
+      </div>
+    <!--------div to contain extra categories hidden by default------>
+    <div class="extra-cat" id="extraCatContainer">
+      <!--food & drink-->
+      <div class="cat-selection">
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Food & Drink</label>
+        <img src="img/bitmap-copy-18.jpg"
+          srcset="img/bitmap-copy-18@2x.jpg 2x,
+             img/bitmap-copy-18@3x.jpg 3x"
+          class="Bitmap-Copy-18">
+      </div>
+      <!--gardening-->
+      <div class="cat-selection">
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Gardening</label>
+        <img src="img/bitmap-copy-21.jpg"
+          srcset="img/bitmap-copy-21@2x.jpg 2x,
+             img/bitmap-copy-21@3x.jpg 3x"
+          class="Bitmap-Copy-21">
+      </div>
+      <!--health & fitness-->
+      <div class="cat-selection">
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Health & Fitness</label>
+        <img src="img/bitmap-copy-15.jpg"
+          srcset="img/bitmap-copy-15@2x.jpg 2x,
+             img/bitmap-copy-15@3x.jpg 3x"
+          class="Bitmap-Copy-15">
+      </div>
+      <!--history & reference-->
+      <div class="cat-selection">
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">History & Reference</label>
+        <img src="img/bitmap-copy-17.jpg"
+          srcset="img/bitmap-copy-17@2x.jpg 2x,
+             img/bitmap-copy-17@3x.jpg 3x"
+          class="Bitmap-Copy-17">
+      </div>
+      <!--lego books-->
+      <div class="cat-selection">
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Lego Books<span>&#174</span></label>
+        <img src="img/bitmap-copy-20.png"
+          srcset="img/bitmap-copy-20@2x.png 2x,
+             img/bitmap-copy-20@3x.png 3x"
+          class="Bitmap-Copy-20">
+      </div>
+      <!--marvel-->
+      <div class="cat-selection">
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Marvel</label>
+        <img src="img/bitmap-copy-14.png"
+          srcset="img/bitmap-copy-14@2x.png 2x,
+             img/bitmap-copy-14@3x.png 3x"
+          class="Bitmap-Copy-14">
+      </div>
+      <!--pregnancy & parenting-->
+      <div class="cat-selection">
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Pregnancy & Parenting</label>
+        <img src="img/bitmap-copy-19.jpg"
+          srcset="img/bitmap-copy-19@2x.jpg 2x,
+             img/bitmap-copy-19@3x.jpg 3x"
+          class="Bitmap-Copy-19">
+      </div>
+      <!--star wars-->
+      <div class="cat-selection">
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Star Wars<span>&#8482</span></label>
+        <img src="img/bitmap-copy-22.jpg"
+          srcset="img/bitmap-copy-22@2x.jpg 2x,
+             img/bitmap-copy-22@3x.jpg 3x"
+          class="Bitmap-Copy-22">
+      </div>
+      <!--travel-->
+      <div class="cat-selection">
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Travel</label>
+        <img src="img/bitmap-copy-16.jpg"
+          srcset="img/bitmap-copy-16@2x.jpg 2x,
+             img/bitmap-copy-16@3x.jpg 3x"
+          class="Bitmap-Copy-16">
+      </div>
+    </div>
+    <!-----------end of extra categories------------>
+      <button class="show-all-button" id="extraCategories">Show all categories<span></span></button>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
