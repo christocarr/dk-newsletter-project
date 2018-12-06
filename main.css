@@ -69,7 +69,7 @@ p {
   right: 1em;
 }
 
-.show-all-button {
+button {
   width: 280px;
   height: 44px;
   background-color: #e30613;
@@ -85,5 +85,33 @@ p {
 
 button:hover {
   cursor: pointer;
+}
+
+/*----------------signup form----------------*/
+.newsletter-signup {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.signup-input {
+  height: 50px;
+  width: 280px;
+  margin: 0 0 1em 0;
+  border-style: none;
+}
+
+.signup-input::placeholder {
+  padding: 0 0 1em 0;
+}
+
+form label {
+  width: 280px;
+  color: #646464;
 }
 
