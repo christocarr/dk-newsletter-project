@@ -11,9 +11,9 @@
   <main class="main" id="main">
     <h1 class="main-title">Book Recommendations Just for You</h1>
     <p>Choose from the categories below and we will send you information about books you'll love</p>
-    <!--------categorie selection---------->
+    <!--------category selection---------->
     <div class="cat-select-container">
-      <!--childrens-->
+      <!--children's-->
       <div class="cat-selection">
         <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Children's</label>
         <img src="img/bitmap-copy-2.jpg"
@@ -122,7 +122,9 @@
           <input type="text" class="signup-input" placeholder="Last name &#42" required>
           <input type="text" class="signup-input" placeholder="Your email address &#42" required>
           <button>Subscribe</button>
-          <label class=""><input type="checkbox">I agree to the<span class="privacy-policy"> Privacy Policy </span>and I am over 16 years of age</span></label>
+          <div class="privacy-policy-wrapper">
+            <input type="checkbox" id="privacyPolicy"><p>I agree to the <a class="privacy-policy">Privacy Policy</a> and I am over 16 years of age</label>
+          </div>
         </form>
       </div>
     </div>
