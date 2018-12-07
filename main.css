@@ -108,13 +108,10 @@ form {
 
 .signup-input {
   height: 50px;
-  width: 280px;
+  width: 252px;
   margin: 0 0 1em 0;
+  padding: 0 1em 0 1em;
   border-style: none;
-}
-
-input::placeholder {
-  padding: 0 0 0 1em;
 }
 
 .privacy-policy-wrapper {
