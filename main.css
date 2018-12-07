@@ -24,7 +24,7 @@ body {
 p {
   text-align: center;
   padding: 0 1em 0 1em;
-  margin: 0 0 1.7em 0;
+  margin: 0 0 1.6em 0;
   color: #646464;
 }
 
@@ -43,6 +43,7 @@ p {
   background-color: white;
   margin: 0 0 1em 0;
 }
+
 
 .cat-select-label {
   display: flex;
@@ -106,8 +107,8 @@ form {
   border-style: none;
 }
 
-.signup-input::placeholder {
-  padding: 0 0 1em 0;
+input::placeholder {
+  padding: 0 0 0 1em;
 }
 
 form label {
