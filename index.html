@@ -13,25 +13,29 @@
     <p>Choose from the categories below and we will send you information about books you'll love</p>
     <!--------category selection---------->
     <div class="cat-select-container">
-      <!--children's-->
+      <!---------------children's------------------>
       <div class="cat-selection">
-        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Children's</label>
+        <label class="cat-select-label" for="child">
+          <input type="checkbox" class="cat-select-check" name="childrens">Children's
+        </label>
         <img src="img/bitmap-copy-2.jpg"
           srcset="img/bitmap-copy-2@2x.jpg 2x,
              img/bitmap-copy-2@3x.jpg 3x"
           class="Bitmap-Copy-2">
       </div>
-      <!--crafts & hobbies-->
+      <!---------------crafts & hobbies-------------->
       <div class="cat-selection">
-        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Crafts & Hobbies</label>
+        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check" name="craft&hobbies">Crafts & Hobbies</label>
         <img src="img/bitmap-copy-9.jpg"
           srcset="img/bitmap-copy-9@2x.jpg 2x,
              img/bitmap-copy-9@3x.jpg 3x"
           class="Bitmap-Copy-9">
       </div>
-      <!--education & teachers-->
+      <!-------------education & teachers---------->
       <div class="cat-selection">
-        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Education & Teachers</label>
+        <label class="cat-select-label" for="child">
+          <input type="checkbox" class="cat-select-check" name="education&teachers">Education & Teachers
+        </label>
         <img src="img/bitmap-copy-7.jpg"
           srcset="img/bitmap-copy-7@2x.jpg 2x,
              img/bitmap-copy-7@3x.jpg 3x"
@@ -39,73 +43,91 @@
       </div>
     <!--------div to contain extra categories hidden by default------>
     <div class="extra-cat" id="extraCatContainer">
-      <!--food & drink-->
+      <!---------------food & drink---------------->
       <div class="cat-selection">
-        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Food & Drink</label>
+        <label class="cat-select-label" for="child">
+          <input type="checkbox" class="cat-select-check" name="food&drink">Food & Drink
+        </label>
         <img src="img/bitmap-copy-18.jpg"
           srcset="img/bitmap-copy-18@2x.jpg 2x,
              img/bitmap-copy-18@3x.jpg 3x"
           class="Bitmap-Copy-18">
       </div>
-      <!--gardening-->
+      <!-----------------gardening----------------->
       <div class="cat-selection">
-        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Gardening</label>
+        <label class="cat-select-label" for="child">
+          <input type="checkbox" class="cat-select-check" name="gardening">Gardening
+        </label>
         <img src="img/bitmap-copy-21.jpg"
           srcset="img/bitmap-copy-21@2x.jpg 2x,
              img/bitmap-copy-21@3x.jpg 3x"
           class="Bitmap-Copy-21">
       </div>
-      <!--health & fitness-->
+      <!---------------health & fitness-------------->
       <div class="cat-selection">
-        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Health & Fitness</label>
+        <label class="cat-select-label" for="child">
+          <input type="checkbox" class="cat-select-check" name="health&fitness">Health & Fitness
+        </label>
         <img src="img/bitmap-copy-15.jpg"
           srcset="img/bitmap-copy-15@2x.jpg 2x,
              img/bitmap-copy-15@3x.jpg 3x"
           class="Bitmap-Copy-15">
       </div>
-      <!--history & reference-->
+      <!--------------history & reference-------------->
       <div class="cat-selection">
-        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">History & Reference</label>
+        <label class="cat-select-label" for="child">
+          <input type="checkbox" class="cat-select-check" name="history&reference">History & Reference
+        </label>
         <img src="img/bitmap-copy-17.jpg"
           srcset="img/bitmap-copy-17@2x.jpg 2x,
              img/bitmap-copy-17@3x.jpg 3x"
           class="Bitmap-Copy-17">
       </div>
-      <!--lego books-->
+      <!----------------lego books------------------->
       <div class="cat-selection">
-        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">LEGO<span class="registered-symbol">&#174 </span>Books</label>
+        <label class="cat-select-label" for="child">
+          <input type="checkbox" class="cat-select-check" name="lego">LEGO<span class="registered-symbol">&#174 </span>Books
+        </label>
         <img src="img/bitmap-copy-20.png"
           srcset="img/bitmap-copy-20@2x.png 2x,
              img/bitmap-copy-20@3x.png 3x"
           class="Bitmap-Copy-20">
       </div>
-      <!--marvel-->
+      <!------------------marvel-------------------->
       <div class="cat-selection">
-        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Marvel</label>
+        <label class="cat-select-label" for="child">
+          <input type="checkbox" class="cat-select-check" name="marvel">Marvel
+        </label>
         <img src="img/bitmap-copy-14.png"
           srcset="img/bitmap-copy-14@2x.png 2x,
              img/bitmap-copy-14@3x.png 3x"
           class="Bitmap-Copy-14">
       </div>
-      <!--pregnancy & parenting-->
+      <!----------pregnancy & parenting----------->
       <div class="cat-selection">
-        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Pregnancy & Parenting</label>
+        <label class="cat-select-label" for="child">
+          <input type="checkbox" class="cat-select-check" name="pregnancy&parenting">Pregnancy & Parenting
+        </label>
         <img src="img/bitmap-copy-19.jpg"
           srcset="img/bitmap-copy-19@2x.jpg 2x,
              img/bitmap-copy-19@3x.jpg 3x"
           class="Bitmap-Copy-19">
       </div>
-      <!--star wars-->
+      <!----------------star wars---------------->
       <div class="cat-selection">
-        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Star Wars<span>&#8482</span></label>
+        <label class="cat-select-label" for="child">
+          <input type="checkbox" class="cat-select-check" name="star-wars">Star Wars<span>&#8482</span>
+        </label>
         <img src="img/bitmap-copy-22.jpg"
           srcset="img/bitmap-copy-22@2x.jpg 2x,
              img/bitmap-copy-22@3x.jpg 3x"
           class="Bitmap-Copy-22">
       </div>
-      <!--travel-->
+      <!----------------travel------------------>
       <div class="cat-selection">
-        <label class="cat-select-label" for="child"><input type="checkbox" class="cat-select-check">Travel</label>
+        <label class="cat-select-label" for="child">
+          <input type="checkbox" class="cat-select-check" name="travel">Travel
+        </label>
         <img src="img/bitmap-copy-16.jpg"
           srcset="img/bitmap-copy-16@2x.jpg 2x,
              img/bitmap-copy-16@3x.jpg 3x"
@@ -118,9 +140,9 @@
       <div class="newsletter-signup" id="newsletterSignup">
         <p>Join our newsletter so we can send you book recommendations</p>
         <form>
-          <input type="text" class="signup-input" placeholder="First name &#42" required>
-          <input type="text" class="signup-input" placeholder="Last name &#42" required>
-          <input type="text" class="signup-input" placeholder="Your email address &#42" required>
+          <input type="text" class="signup-input" placeholder="First name &#42" name="firstName" required>
+          <input type="text" class="signup-input" placeholder="Last name &#42"  name="lastName" required>
+          <input type="email" class="signup-input" placeholder="Your email address &#42" name="email" required>
           <button>Subscribe</button>
           <div class="privacy-policy-wrapper">
             <input type="checkbox" id="privacyPolicy"><p>I agree to the <a class="privacy-policy">Privacy Policy</a> and I am over 16 years of age</label>
