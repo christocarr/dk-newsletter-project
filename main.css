@@ -44,6 +44,9 @@ p {
   margin: 0 0 1em 0;
 }
 
+.cat-selection:last-of-type {
+  margin: 0 0 1.6em 0;
+}
 
 .cat-select-label {
   display: flex;
