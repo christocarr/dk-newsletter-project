@@ -19,21 +19,17 @@ window.onload = function() {
 
   //check user category selection
   const validateCatSelect = () => {
-
     //get all category selections
     const CAT_SELECTIONS = document.querySelectorAll('.cat-select-check');
     let userSelectedArr = [];
     //check if user selected and put in userSelected Array
     CAT_SELECTIONS.forEach(function(item) {
-      console.log(item)
       if(item.checked) {
         userSelectedArr.push(item)
       }
     })
-     
     //check if user selected array is empty
     let userSelected = userSelectedArr.length > 0 ? true : false;
-
     //if user selected no category then show error message
     if(!userSelected) {
       const CAT_ERROR = document.getElementById('catSelectErr');
@@ -41,14 +37,19 @@ window.onload = function() {
     }
   }
 
-  const validateForm = () => {
-    //get user category selection
-    validateCatSelect();
-  
-  }
+  //check privacy policy agreement
+  const validatePrivacyPolicy = () => {
+    const PRIVACY_POLICY = document.getElementById('privacyPolicy');
+    if (!PRIVACY_POLICY.checked) {
+      const PRIVACY_POLICY_ERR = document.getElementById('privacyPolicyErr');
+      PRIVACY_POLICY_ERR.classList = 'show-err-message';
+    }
+  } 
+
 
   SUBSCRIBE.addEventListener('click', function() {
-    validateForm();
+    validateCatSelect();
+    validatePrivacyPolicy();
   })
 }
 
