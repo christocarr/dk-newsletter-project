@@ -153,3 +153,30 @@ form {
   color: #e30613;
   display: block;
 }
+
+/*------------signup success styles---------*/
+
+.signup-success {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #c2d051;
+}
+
+.signup-success h1 {
+  font-size: 2em;
+  color: white;
+}
+
+.signup-success h2 {
+  width: 60%;
+  text-align: center;
+}
+
+.success-img {
+  width: 80%;
+  height: auto;
+}
