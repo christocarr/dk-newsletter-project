@@ -141,3 +141,14 @@ form {
   cursor: pointer;
 }
 
+/*--------error message styles---------*/
+
+.err-message {
+  
+  display: none;
+}
+
+.show-err-message {
+  color: #e30613;
+  display: block;
+}
