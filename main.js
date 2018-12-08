@@ -5,7 +5,8 @@ window.onload = function() {
   const EXTRA_CAT_CONTAINER = document.getElementById('extraCatContainer');
   //get signup container
   const SIGNUP_CONTAINER = document.getElementById('newsletterSignup');
-
+  //get div to hold error message when no category selected
+  const CAT_SELECT_ERROR = document.getElementById('catSelectError');
   //get subscribe button
   const SUBSCRIBE = document.getElementById('subscribe');
 
@@ -33,14 +34,10 @@ window.onload = function() {
     //check if user selected array is empty
     let userSelected = userSelectedArr.length > 0 ? true : false;
 
-    //get div to hold error message when no category selected
-    const CAT_SELECT_ERROR = document.getElementById('catSelectError');
     //if user selected no category then show error message
     if(!userSelected) {
-      const CAT_ERROR = document.createElement('p');
-      CAT_ERROR.style.color = '#e30613';
-      CAT_ERROR.innerHTML = 'Please select at least one category above'
-      CAT_SELECT_ERROR.appendChild(CAT_ERROR);
+      const CAT_ERROR = document.getElementById('catSelectErr');
+      CAT_ERROR.classList = 'show-err-message';
     }
   }
 
