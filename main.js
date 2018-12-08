@@ -37,6 +37,31 @@ window.onload = function() {
     }
   }
 
+  //check form if valid
+  const validateForm = () => {
+    const FORM = document.getElementsByTagName('form')[0];
+    const FIRST_NAME = document.getElementById('firstName');
+    const FIRST_NAME_ERR = document.getElementById('firstNameErr');
+    const LAST_NAME = document.getElementById('lastName');
+    const LAST_NAME_ERR = document.getElementById('lastNameErr');
+    const EMAIL = document.getElementById('email')
+    const EMAIL_ERR = document.getElementById('emailErr');
+  
+    FORM.addEventListener('submit', function(ev) {
+      if(FIRST_NAME.value === '') {
+        FIRST_NAME_ERR.classList = 'show-err-message';
+      }
+      if(LAST_NAME.value === '') {
+        LAST_NAME_ERR.classList = 'show-err-message';
+      }
+      if(!EMAIL.validity.valid || EMAIL.value === '') {
+        EMAIL_ERR.classList = 'show-err-message';
+      }
+      ev.preventDefault();
+    }, false);
+  }
+
+
   //check privacy policy agreement
   const validatePrivacyPolicy = () => {
     const PRIVACY_POLICY = document.getElementById('privacyPolicy');
@@ -46,9 +71,9 @@ window.onload = function() {
     }
   } 
 
-
-  SUBSCRIBE.addEventListener('click', function() {
+  SUBSCRIBE.addEventListener('click', function(ev) {
     validateCatSelect();
+    validateForm();
     validatePrivacyPolicy();
   })
 }

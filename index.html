@@ -142,11 +142,14 @@
       <!----------newsletter signup form------------>
       <div class="newsletter-signup" id="newsletterSignup">
         <p>Join our newsletter so we can send you book recommendations</p>
-        <form>
-          <input type="text" class="signup-input" placeholder="First name &#42" name="firstName" required>
-          <input type="text" class="signup-input" placeholder="Last name &#42"  name="lastName" required>
-          <input type="email" class="signup-input" placeholder="Your email address &#42" name="email" required>
-          <button id="subscribe">Subscribe</button>
+        <form novalidate>
+          <input type="text" class="signup-input" id="firstName" placeholder="First name &#42" name="firstName">
+          <p class="err-message" id="firstNameErr">Please enter your first name</p>
+          <input type="text" class="signup-input" id="lastName" placeholder="Last name &#42"  name="lastName">
+          <p class="err-message" id="lastNameErr">Please enter your last name</p>
+          <input type="email" class="signup-input" id="email" placeholder="Your email address &#42" name="email">
+          <p class="err-message" id="emailErr">Please enter your email address</p>
+          <button type="submit" id="subscribe">Subscribe</button>
           <div class="privacy-policy-wrapper">
             <input type="checkbox" id="privacyPolicy"><p>I agree to the <a class="privacy-policy">Privacy Policy</a> and I am over 16 years of age</label>
           </div>
