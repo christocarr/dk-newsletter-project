@@ -29,6 +29,8 @@ p {
   color: #646464;
 }
 
+/*-----------category selection styles--------------*/
+
 .cat-select-container {
   display: flex;
   flex-direction: column;
@@ -55,21 +57,42 @@ label {
   justify-self: start;
   width: 280px;
   color: #646464;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-.registered-symbol {
-  font-size: 17px;
-  margin: 0 3px 0 0;
-}
+/*--------custom checkbox styles--------*/
 
-input[type="checkbox"] {
+label > span::before {
+  justify-self: center;
+  content: "";
+  display: inline-block;
   width: 18px;
   height: 18px;
-}
-
-.cat-select-check {
+  background-image: url(./img/rectangle-copy-26.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 2px;
   margin: 0 1em 0 1em;
 }
+
+label > input[type=checkbox] {
+  display: none;
+}
+
+label > input[type=checkbox]:checked + span::before {
+  background-image: url('./img/path-2-copy@3x.png');
+  background-size: 70%;
+  background-position: center;
+  background-color: #8bb756;
+}
+
+label > input[type=checkbox]:checked + span {
+  color: #8bb756;
+}
+
+/*-------- end custom checkbox styles--------*/
 
 .cat-selection img {
   position: absolute;
@@ -116,6 +139,7 @@ form {
 }
 
 .privacy-policy-wrapper {
+  position: relative;
   display: flex;
   width: 280px;
   margin: 0 0 1.6em 0;
@@ -125,6 +149,7 @@ form {
   width: 18px;
   height: 18px;
   margin: 0;
+
 }
 
 .privacy-policy-wrapper p {
@@ -136,9 +161,6 @@ form {
 
 .privacy-policy {
   text-decoration: underline;
-}
-
-.privacy-policy:hover {
   cursor: pointer;
 }
 
