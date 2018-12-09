@@ -154,13 +154,19 @@
       <div class="newsletter-signup" id="newsletterSignup">
         <p>Join our newsletter so we can send you book recommendations</p>
         <form novalidate>
-          <input type="text" class="signup-input" id="firstName" placeholder="First name &#42" name="firstName">
-          <p class="err-message" id="firstNameErr">Please enter your first name</p>
-          <input type="text" class="signup-input" id="lastName" placeholder="Last name &#42"  name="lastName">
-          <p class="err-message" id="lastNameErr">Please enter your last name</p>
-          <input type="email" class="signup-input" id="email" placeholder="Your email address &#42" name="email">
-          <p class="err-message" id="emailErr">Please enter your email address</p>
-          <button type="submit" id="subscribe">Subscribe</button>
+          <div>
+            <input type="text" class="signup-input" id="firstName" placeholder="First name &#42" name="firstName">
+            <p class="err-message" id="firstNameErr">Please enter your first name</p>
+          </div>
+          <div>
+            <input type="text" class="signup-input" id="lastName" placeholder="Last name &#42"  name="lastName">
+            <p class="err-message" id="lastNameErr">Please enter your last name</p>
+          </div>
+          <div class="last-form-div">
+            <input type="email" class="signup-input" id="email" placeholder="Your email address &#42" name="email">
+            <p class="err-message" id="emailErr">Please enter your email address</p>
+            <button type="submit" id="subscribe">Subscribe</button>
+          </div>
           <div class="privacy-policy-wrapper">
             <label class="privacy-policy-label">
               <input type="checkbox" id="privacyPolicy">

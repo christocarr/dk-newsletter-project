@@ -267,6 +267,22 @@ form {
     width: 100%;
   }
 
+  .last-form-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    margin: 0 0 1em 0;
+  } 
+
+  .last-form-div p {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    margin: 1em 0 0 0;
+  }
+
   /*-------------signup screen------------*/
   .signup-success h1 {
     width: 50%;
@@ -290,5 +306,9 @@ form {
     left: 6em;
   }
   /*-------------signup end------------*/
+
+  @media (min-width: 1024px) {
+
+  }
 
 }
