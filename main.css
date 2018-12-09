@@ -260,11 +260,13 @@ form {
 
   .privacy-policy-wrapper {
     align-items: center;
+    justify-items: center;
+    justify-content: center;
     width: 60%;
   }
 
   .privacy-policy-wrapper p {
-    width: 100%;
+    width: 70%;
   }
 
   .last-form-div {
@@ -309,6 +311,18 @@ form {
 
   @media (min-width: 1024px) {
 
+    .last-form-div {
+      width: 70%;
+    } 
+
+    .privacy-policy-wrapper {
+      display: flex;
+      width: 50%;
+    }
+
+    .privacy-policy-wrapper p {
+      margin: 0 0 0 1em;
+    }
   }
 
 }
