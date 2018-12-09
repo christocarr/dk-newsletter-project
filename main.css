@@ -210,3 +210,35 @@ form {
   width: 50%;
   height: auto;
 }
+
+/*-------------MEDIA QUERIES-----------------*/
+
+@media (min-width: 768px) {
+
+  
+
+  /*-------------signup screen------------*/
+  .signup-success h1 {
+    width: 50%;
+    text-align: left;
+    font-size: 3em;
+    margin: 0 0 1em 4.5em;
+  }
+  
+  .signup-success h2 {
+    width: 50%;
+    font-size: 2em;
+    margin: 0 0 3em 6.5em;
+    text-align: left;
+  }
+  
+  .success-img {
+    position: absolute;
+    align-self: flex-start;
+    width: 20%;
+    height: auto;
+    left: 6em;
+  }
+  /*-------------signup end------------*/
+
+}
