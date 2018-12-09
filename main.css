@@ -144,6 +144,11 @@ form {
   border-style: none;
 }
 
+.last-form-div {
+  display: flex;
+  flex-direction: column;
+}
+
 .privacy-policy-wrapper {
   display: flex;
   align-items: flex-start;
