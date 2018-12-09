@@ -56,7 +56,7 @@ label {
   align-items: center;
   justify-self: start;
   width: 280px;
-  color: #646464;
+  color: #797878;
   cursor: pointer;
   font-weight: 600;
 }
@@ -116,6 +116,10 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+
+.show-more-arrow {
+  margin: 0 0 0 1em;
 }
 
 /*----------------signup form----------------*/
