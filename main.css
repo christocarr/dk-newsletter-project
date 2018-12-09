@@ -331,4 +331,11 @@ form {
     }
   }
 
+  @media (min-width: 1280px) {
+    .cat-select-container {
+      width: 70%;
+      margin: auto;
+    }
+  }
+
 }
