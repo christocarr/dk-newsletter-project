@@ -5,5 +5,5 @@ An assignment issued by DK(Dorling Kindersley) publishing for a position as a fr
 ## Instructions
 
 1. Install the code to your local machine by cloning or downloading 
-2. '''git clone https://github.com/christocarr/dk-newsletter-project.git ```
+2. ```git clone https://github.com/christocarr/dk-newsletter-project.git ```
 3. Run the index.html file in a browser of your choice
