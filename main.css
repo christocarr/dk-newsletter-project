@@ -207,7 +207,7 @@ form {
 }
 
 .success-img {
-  width: 50%;
+  max-width: 40%;
   height: auto;
 }
 
@@ -215,7 +215,57 @@ form {
 
 @media (min-width: 768px) {
 
-  
+  .cat-select-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cat-selection {
+    margin: 0 1em 1em 0;
+  }
+
+  .extra-cat {
+    display: flex;
+  }
+
+  .extra-categories {
+    display: none;
+  }
+
+  .newsletter-signup {
+    display: block;
+    width: 100%;
+  }
+
+  .newsletter-signup form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .signup-input {
+    margin: 0 1em 1em 0;
+  }
+
+  input[type=email] {
+    width: 40%;
+  }
+
+  button {
+    width: 20%;
+    height: 50px;
+  }
+
+  .privacy-policy-wrapper {
+    align-items: center;
+    width: 60%;
+  }
+
+  .privacy-policy-wrapper p {
+    width: 100%;
+  }
 
   /*-------------signup screen------------*/
   .signup-success h1 {

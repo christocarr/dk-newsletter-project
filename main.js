@@ -7,13 +7,17 @@ const init = function() {
 
 //display extra categories and signup fom 
 const extraCategories = () => {
-	//get div holding extra categories
-	const EXTRA_CAT_CONTAINER = document.getElementById('extraCatContainer');
+	//get divs holding extra categories
+	const EXTRA_CATEGORIES = document.querySelectorAll('#extraCat');
 	//get button to show more categories
 	const EXTRA_CATEGORIES_BUTTON = document.getElementById('extraCategories');
 	//get signup form container and display
 	const SIGNUP_CONTAINER = document.getElementById('newsletterSignup');
-	EXTRA_CAT_CONTAINER.style.display = 'block';
+
+	EXTRA_CATEGORIES.forEach(function(item) {
+		item.style.display = 'flex';
+	})
+	
 	EXTRA_CATEGORIES_BUTTON.style.display = 'none';
 	SIGNUP_CONTAINER.style.display = 'block';
 }
