@@ -47,7 +47,7 @@ window.onload = function() {
     const EMAIL = document.getElementById('email')
     const EMAIL_ERR = document.getElementById('emailErr');
   
-    FORM.addEventListener('submit', function(ev) {
+    // FORM.addEventListener('submit', function(ev) {
       if(FIRST_NAME.value === '') {
         FIRST_NAME_ERR.classList = 'show-err-message';
       }
@@ -58,7 +58,7 @@ window.onload = function() {
         EMAIL_ERR.classList = 'show-err-message';
       }
       ev.preventDefault();
-    }, false);
+    // }, false);
   }
 
 
